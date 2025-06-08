@@ -1,0 +1,13 @@
+---
+const { href } = Astro.props;
+
+const { pathname } = Astro.url;
+const isActive = href === pathname || href === pathname.replace(/\/$/, "");
+---
+
+<li class="text-center mx-2 sm:mx-3 lg:mx-4 last:mr-0 my-2 sm:my-0 flex items-center">
+  <a href={href} class="group relative text-jlp-burnt hover:text-jlp-amber pb-1 text-sm sm:text-base flex items-center py-2 sm:py-0">
+    <slot />
+    <span class={`scale-x-0 ease-in-out absolute left-0 bottom-0 border-b-navlink transition-all duration-500 group-hover:w-full group-hover:scale-x-100 ${isActive ? "w-full scale-x-100" : ""}`}></span>
+  </a>
+</li>

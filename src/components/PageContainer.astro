@@ -1,0 +1,25 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+const { sidebarVisible } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="bg-jlp-amber-light border-t-header border-t-jlp-blue">
+    <Header title={SITE_TITLE} />
+    <!-- <NavBar /> -->
+    <div class="container w-full flex flex-col lg:flex-row flex-grow overflow-hidden px-4 sm:px-6 lg:px-8 xl:px-30 py-6 lg:py-8 mb-20 max-w-6xl mx-auto antialiased prose prose-sm sm:prose-lg font-serif bg-jlp-amber-light">
+      <main role="main" class="w-full h-full flex-grow">
+        <slot />
+      </main>
+    </div>
+    <Footer />
+  </body>
+</html>

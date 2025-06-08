@@ -1,85 +1,113 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import FormattedDate from "../components/FormattedDate.astro";
-
+import PageContainer from "../components/PageContainer.astro";
+import FormattedDate from "@components/FormattedDate.astro";
+import LinkButton from "../components/LinkButton.astro";
+import CoverImage from "../components/CoverImage.astro";
 type Props = CollectionEntry<"books">["data"];
 
-const { title } = Astro.props;
+const { title, pubDate, gumroadLink, weightlessLink, kindleLink, koboLink, coverImage, amazonLink, payhipLink, itchLink, goodreadsLink, isbn10, isbn13, pageCount, genre, category } = Astro.props;
 ---
 
-<html lang="en">
-  <head>
-    <BaseHead title={title} description={"hello"} />
-    <style>
-      main {
-        width: calc(100% - 2em);
-        max-width: 100%;
-        margin: 0;
-      }
-      .hero-image {
-        width: 100%;
-      }
-      .hero-image img {
-        display: block;
-        margin: 0 auto;
-        border-radius: 12px;
-        box-shadow: var(--box-shadow);
-      }
-      .prose {
-        width: 720px;
-        max-width: calc(100% - 2em);
-        margin: auto;
-        padding: 1em;
-        color: rgb(var(--gray-dark));
-      }
-      .title {
-        margin-bottom: 1em;
-        padding: 1em 0;
-        text-align: center;
-        line-height: 1;
-      }
-      .title h1 {
-        margin: 0 0 0.5em 0;
-      }
-      .date {
-        margin-bottom: 0.5em;
-        color: rgb(var(--gray));
-      }
-      .last-updated-on {
-        font-style: italic;
-      }
-    </style>
-  </head>
+<PageContainer>
+  <div class="container w-full flex flex-col lg:flex-row flex-grow overflow-hidden mb-20 max-w-6xl px-4 sm:px-6 lg:px-8">
+    <div class="w-full lg:w-1/2 mb-6 lg:mb-0 flex justify-center lg:justify-start">
+      <div class="max-w-sm">
+        {coverImage && <CoverImage imagePath={coverImage} altText={`Cover of ${title}`} />}
+      </div>
+    </div>
 
-  <body>
-    <Header />
-    <main>
-      <article>
-        <!-- <div class="hero-image">
-					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
-				</div> -->
-        <div class="prose">
-          <div class="title">
-            <div class="date">
-              <!-- <FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							} -->
-            </div>
-            <h1>{title}</h1>
-            <hr />
+    <div class="w-full lg:w-1/2 lg:ml-8">
+      <header class="entry-header">
+        <h1 class="text-jlp-burnt text-2xl sm:text-3xl lg:text-4xl mb-4">{title}</h1>
+      </header>
+
+      <div class="border-solid border-jlp-nymph border-y py-8 mb-8 text-sm sm:text-base">
+        <p class="m-0 mb-2">Available in Print: <a class="buy-link" href={amazonLink}>Amazon</a></p>
+        <div class="m-0">
+          <span class="block sm:inline">Digital: </span>
+          <div class="flex flex-wrap gap-2 sm:inline">
+            {
+              kindleLink && (
+                <>
+                  <a class="buy-link inline-block" href={kindleLink}>
+                    Kindle
+                  </a>
+                  <span class="hidden sm:inline"> | </span>
+                </>
+              )
+            }
+            {
+              gumroadLink && (
+                <>
+                  <a class="buy-link inline-block" href={gumroadLink}>
+                    Gumroad
+                  </a>
+                  <span class="hidden sm:inline"> | </span>
+                </>
+              )
+            }
+            {
+              payhipLink && (
+                <>
+                  <a class="buy-link inline-block" href={payhipLink}>
+                    Payhip
+                  </a>
+                  <span class="hidden sm:inline"> | </span>
+                </>
+              )
+            }
+            {
+              koboLink && (
+                <>
+                  <a class="buy-link inline-block" href={koboLink}>
+                    Kobo
+                  </a>
+                  <span class="hidden sm:inline"> | </span>
+                </>
+              )
+            }
+            {
+              weightlessLink && (
+                <>
+                  <a class="buy-link inline-block" href={weightlessLink}>
+                    Weightless
+                  </a>
+                  <span class="hidden sm:inline"> | </span>
+                </>
+              )
+            }
+            {
+              itchLink && (
+                <a class="buy-link inline-block" href={itchLink}>
+                  itch.io
+                </a>
+              )
+            }
           </div>
-          <slot />
         </div>
-      </article>
-    </main>
-    <Footer />
-  </body>
-</html>
+      </div>
+      {
+        goodreadsLink && (
+          <p class="my-4">
+            <a href={goodreadsLink}>
+              <img decoding="async" src="https://s.gr-assets.com/assets/badge/goodreads-badge-add-plus-71eae69ca0307d077df66a58ec068898.png" alt="Add to Goodreads" width="130" height="41" class="max-w-full h-auto" />
+            </a>
+          </p>
+        )
+      }
+      <div class="prose-sm sm:prose-lg">
+        <slot />
+        <ul class="text-sm sm:text-base">
+          <li><strong>Genre: </strong>{genre}</li>
+          <li><strong>Category: </strong>{category}</li>
+          <li><strong>Print Length: </strong>{pageCount} pages</li>
+          <li><strong>Publication Date: </strong><FormattedDate date={pubDate} /></li>
+          <li><strong>ISBN: </strong>{isbn13}</li>
+        </ul>
+      </div>
+    </div>
+
+    <br class="clear" />
+  </div></PageContainer
+>

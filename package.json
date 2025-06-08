@@ -1,5 +1,5 @@
 {
-  "name": "jenniferlynparsons",
+  "name": "lunastationquarterly",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,10 +11,15 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
-    "@astrojs/mdx": "^2.0.4",
+    "@astrojs/mdx": "^2.0.5",
     "@astrojs/rss": "^4.0.2",
-    "@astrojs/sitemap": "^3.0.4",
-    "astro": "^4.1.2",
+    "@astrojs/sitemap": "^3.0.5",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.2.1",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10"
   }
 }

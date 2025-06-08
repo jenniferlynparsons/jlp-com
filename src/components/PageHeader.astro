@@ -1,0 +1,27 @@
+---
+import FormattedDate from "../components/FormattedDate.astro";
+
+const { title, pubDate, volumeNumber } = Astro.props;
+---
+
+<div class="mb-4 sm:mb-6">
+  <h1 class="mb-2 text-2xl sm:text-3xl lg:text-4xl">{title}</h1>
+  {
+    pubDate && (
+      <p class="text-sm sm:text-base">
+        <FormattedDate date={pubDate} />
+        {volumeNumber && <span> | Year {volumeNumber}</span>}
+      </p>
+    )
+  }
+</div>
+
+<style>
+  div::after {
+    background: #d24719;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+  }
+</style>

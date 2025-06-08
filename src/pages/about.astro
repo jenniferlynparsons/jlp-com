@@ -1,62 +1,25 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import Page from "../layouts/Page.astro";
+import SocialMediaIcon from "../components/SocialMediaIcon.astro";
 ---
 
-<Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage="/blog-placeholder-about.jpg"
->
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
-
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
-
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
-
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
-
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
-</Layout>
+<Page title="About Me" description="About JLP">
+  <div class="flex flex-col lg:flex-row lg:items-start gap-6 lg:gap-8">
+    <div class="w-full lg:w-1/3 flex justify-center lg:justify-start">
+      <img class="!mt-0 w-full max-w-sm lg:max-w-none" src="images/me2021-copy.jpg" alt="Photo of Jennifer Lyn Parsons" />
+    </div>
+    <div class="w-full lg:w-2/3">
+      <h1 class="!mt-0 mb-4 lg:mb-2 text-2xl sm:text-3xl lg:text-4xl text-jlp-burnt">Hi, I'm JP!</h1>
+      <div class="prose prose-sm sm:prose-base lg:prose-lg max-w-none">
+        <p>I write fantasy, soft sci-fi, and fairy tales, often with neurodiverse or queer characters. Occasionally, I'll write stories set in our own world.</p>
+        <p>In addition to working on my own writing, I also run <a href="http://lunastationquarterly.com/">Luna Station Quarterly</a>, an online literary journal devoted to female-identified speculative fiction writers. The Quarterly is the daughter publication of the small publishing company I run, <a href="http://lunastationpress.com">Luna Station Press</a>.</p>
+        <p>Outside of writing (and its close associate, reading), I'm a <a href="https://aquantityofstuff.com/">software engineer</a> working to make the internet more human-friendly. I can also be found devouring comic books and video games, watching baseball, listening to music, and making things out of wool, paper, and wood.</p>
+        <div class="flex gap-3 items-center">
+          <SocialMediaIcon href="https://bsky.app/profile/pixelpaperyarn.bsky.social" src="/images/social_media_icons/bluesky_icon.png" alt="Follow me on Bluesky" />
+          <SocialMediaIcon href="https://open.spotify.com/user/pixelpaperyarn" src="/images/social_media_icons/spotify.png" alt="Follow me on Spotify" />
+          <SocialMediaIcon href="https://www.goodreads.com/author/show/6160810.Jennifer_Lyn_Parsons" src="/images/social_media_icons/goodreads_icon.png" alt="Follow me on Goodreads" />
+        </div>
+      </div>
+    </div>
+  </div>
+</Page>
