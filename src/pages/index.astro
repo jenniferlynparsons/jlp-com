@@ -3,6 +3,7 @@ import Page from "../layouts/Page.astro";
 import { SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
 import CoverImage from "../components/CoverImage.astro";
+import SocialMediaIcon from "@components/SocialMediaIcon.astro";
 
 const { title } = Astro.props;
 
@@ -62,11 +63,16 @@ const books = (await getCollection("books"))
     </div>
     <div class="container w-full flex flex-col lg:flex-row lg:items-start flex-grow overflow-hidden border-t border-jlp-blue pt-20 mt-10 max-w-6xl font-serif">
       <div class="w-full lg:w-1/3 mb-6 lg:mb-0">
-        <img class="!mt-0 w-full max-w-sm mx-auto lg:max-w-none lg:mx-0" src="images/me2021-copy.jpg" />
+        <img class="!mt-0 w-full max-w-sm mx-auto lg:max-w-none lg:mx-0" src="images/jp-2025.png" />
       </div>
       <div class="w-full lg:w-2/3 book-info ml-0 lg:ml-8">
         <h2 class="font-bold text-jlp-blue !mt-0 text-xl sm:text-2xl lg:text-3xl">About the author</h2>
         <p>Jennifer Lyn Parsons is a writer and software engineer. When not writing code or prose, she is also the publisher and editor-in-chief of Luna Station Quarterly. She finds joy in baseball, tea, comics books, discovering music new and old, and making analog things.</p>
+        <div class="flex gap-3 items-center">
+          <SocialMediaIcon href="https://bsky.app/profile/pixelpaperyarn.bsky.social" src="/images/social_media_icons/bluesky_icon.png" alt="Follow me on Bluesky" />
+          <SocialMediaIcon href="https://open.spotify.com/user/dafjk1xn2h0ziovaemi8i3v7q?si=f8f4bafef0d54dd2" src="/images/social_media_icons/spotify.png" alt="Follow me on Spotify" />
+          <SocialMediaIcon href="https://www.goodreads.com/author/show/6160810.Jennifer_Lyn_Parsons" src="/images/social_media_icons/goodreads_icon.png" alt="Follow me on Goodreads" />
+        </div>
       </div>
     </div>
   </div>

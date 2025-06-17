@@ -7,6 +7,8 @@ excerpt: My story, "A King of Infinite Space", is now up as part of Eclectic Fla
 postCategory: News
 categorySlug: /news
 ---
-My story, “A King of Infinite Space”, is now up as part of [Eclectic Flash](http://www.eclecticflash.com/)‘s current issue! I’d love it if you went over and read it, and don’t forget to check out the other stories in the issue!
+My story, “A King of Infinite Space”, is now up as part of Eclectic Flash‘s current issue! I’d love it if you went over and read it, and don’t forget to check out the other stories in the issue!
 
 http://www.eclecticflash.com/
+
+UPDATE 2025: Unfortunately eclectic flash and it's archives are no longer available. :(

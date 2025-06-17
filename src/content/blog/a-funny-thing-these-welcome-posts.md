@@ -19,8 +19,8 @@ This is my writing site, not to be confused with my design site. If you are look
 
 If it is words to entertain you that you seek, then you have, indeed, arrived at the right place. Please feel free to gander at the pages within and lose yourself for a while among the words.
 
-In celebration of the relaunch of this site and it’s spiffy new design, I’m posting a little story that will most probably go homeless otherwise. It owes a debt to Neil Gaiman’s “Instructions” though I will assure you that I did not set out to write such a thing that would owe anything to anyone when I sat down that day and this piece came out from beneath my fingers.
+<!-- In celebration of the relaunch of this site and it’s spiffy new design, I’m posting a little story that will most probably go homeless otherwise. It owes a debt to Neil Gaiman’s “Instructions” though I will assure you that I did not set out to write such a thing that would owe anything to anyone when I sat down that day and this piece came out from beneath my fingers.
 
-And so, without any further ado, I give you “[The Proper Order of Things](http://jenniferlynparsons.com/stories/the-proper-order-of-things/)” and urge you to follow its instructions to the letter if ever you find yourself in a house with a well in the basement.
+And so, without any further ado, I give you “[The Proper Order of Things](http://jenniferlynparsons.com/stories/the-proper-order-of-things/)” and urge you to follow its instructions to the letter if ever you find yourself in a house with a well in the basement. -->
 
 So there you have it, my welcome message and a few little links to follow. And with that business done and dusted, I bid you good morning, good afternoon, good evening, and good night.

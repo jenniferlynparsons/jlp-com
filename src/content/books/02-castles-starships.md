@@ -21,7 +21,8 @@ gumroadLink: https://gum.co/XEoe
 weightlessLink: https://weightlessbooks.com/genre/fiction/castles-and-starships-tales-from-the-astyrred/
 koboLink: 
 kindleLink: https://www.amazon.com/Castles-Starships-Astyrred-Jennifer-Parsons-ebook/dp/B00IFRG1PS
-payhipLink: https://pixelpaperyarn.itch.io/castles-starships
+payhipLink: 
+itchLink: https://pixelpaperyarn.itch.io/castles-starships
 
 ---
 <p class="text-center italic mt-5">"An improbable, non-linear romp through an imagined universe, as snappy as Kerouac's drives with Dean Moriarty. All sci-fi should swing this much. Damn, I wish I wrote this book!"<br> – Tara Lindsey, Author of The Esbat Sequence</p>

@@ -21,7 +21,8 @@ gumroadLink: https://gum.co/bjzIG
 weightlessLink: 
 koboLink: 
 kindleLink: https://www.amazon.com/dp/B07L22D1P3
-payhipLink: https://pixelpaperyarn.itch.io/the-man-who-walked
+payhipLink: 
+itchLink: https://pixelpaperyarn.itch.io/the-man-who-walked
 
 ---
 

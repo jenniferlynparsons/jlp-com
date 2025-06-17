@@ -22,6 +22,7 @@ weightlessLink: https://weightlessbooks.com/fiction/take-on-me/
 koboLink: https://www.kobo.com/us/en/ebook/take-on-me-13
 kindleLink: https://www.amazon.com/dp/B0847CNFFD
 payhipLink: https://payhip.com/
+itchLink: https://pixelpaperyarn.itch.io/take-on-me
 
 
 ---
