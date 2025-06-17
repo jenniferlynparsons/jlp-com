@@ -2,7 +2,6 @@
 import type { CollectionEntry } from "astro:content";
 import PageContainer from "../components/PageContainer.astro";
 import FormattedDate from "@components/FormattedDate.astro";
-import LinkButton from "../components/LinkButton.astro";
 import CoverImage from "../components/CoverImage.astro";
 type Props = CollectionEntry<"books">["data"];
 
@@ -103,7 +102,8 @@ const { title, pubDate, gumroadLink, weightlessLink, kindleLink, koboLink, cover
           <li><strong>Category: </strong>{category}</li>
           <li><strong>Print Length: </strong>{pageCount} pages</li>
           <li><strong>Publication Date: </strong><FormattedDate date={pubDate} /></li>
-          <li><strong>ISBN: </strong>{isbn13}</li>
+          <li><strong>ISBN-13: </strong>{isbn13}</li>
+          <li><strong>ISBN-10: </strong>{isbn10}</li>
         </ul>
       </div>
     </div>

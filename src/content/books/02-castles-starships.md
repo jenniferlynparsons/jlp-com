@@ -1,7 +1,7 @@
 ---
 title: Castles & Starships
 pubDate: 'February 25, 2014'
-isbn10: '1938697425'
+isbn10: '1938697421'
 isbn13: '9781938697425'
 
 coverImage: castles.jpg

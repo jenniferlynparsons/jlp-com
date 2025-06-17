@@ -1,7 +1,7 @@
 ---
 title: The Man Who Walked
 pubDate: 'May 2016'
-isbn10: '1938697647'
+isbn10: '1938697642'
 isbn13: '9781938697647'
 
 coverImage: man-who-walked.jpg

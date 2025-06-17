@@ -1,7 +1,7 @@
 ---
 title: Take On Me
 pubDate: 'February 14, 2020'
-isbn10: '1949077445'
+isbn10: '1949077446'
 isbn13: '9781949077445'
 
 coverImage: take-on-me.jpg

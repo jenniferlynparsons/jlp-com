@@ -1,7 +1,7 @@
 ---
 title: A Stirring in the Bones
 pubDate: 'November 2013'
-isbn10: '938697388'
+isbn10: '1938697383'
 isbn13: '9781938697388'
 
 coverImage: stirring.jpg

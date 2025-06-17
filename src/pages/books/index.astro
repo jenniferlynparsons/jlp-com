@@ -2,10 +2,7 @@
 import Page from "../../layouts/Page.astro";
 import { SITE_DESCRIPTION } from "../../consts";
 import { getCollection } from "astro:content";
-import FormattedDate from "../../components/FormattedDate.astro";
 import CoverImage from "../../components/CoverImage.astro";
-import PageHeader from "../../components/PageHeader.astro";
-import LinkButton from "../../components/LinkButton.astro";
 
 const books = (await getCollection("books")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
