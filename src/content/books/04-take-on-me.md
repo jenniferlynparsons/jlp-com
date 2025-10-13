@@ -30,4 +30,4 @@ This is a story about falling in love, about the families we’re born into and 
 
 But most of all, it’s a story about taking each other as we come, for who we are right now, and who we’re stumbling towards becoming.
 
-You can learn more about the book on it’s own website! Visit <a href="https://takeonme.xyz/">takeonme.xyz</a> for playlists and other goodies!
+For playlists and other goodies visit the book's <a href="/takeonme">own website!</a>
