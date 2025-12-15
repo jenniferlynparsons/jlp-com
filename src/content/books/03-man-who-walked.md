@@ -18,8 +18,6 @@ tag: This is a book plucked out of time. It has always been there. You have alwa
 # Store links
 amazonLink: http://www.amazon.com/Man-Who-Walked-Other-Fantastic/dp/1938697642
 gumroadLink: https://gum.co/bjzIG
-weightlessLink: 
-koboLink: 
 kindleLink: https://www.amazon.com/dp/B07L22D1P3
 payhipLink: 
 itchLink: https://pixelpaperyarn.itch.io/the-man-who-walked
