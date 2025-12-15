@@ -19,7 +19,6 @@ tag: A personal story at the heart of a vast, fragile universe.
 amazonLink: http://www.amazon.com/Stirring-Bones-Jennifer-Lyn-Parsons/dp/1938697383/
 gumroadLink: https://gum.co/juXN
 weightlessLink: https://weightlessbooks.com/genre/fiction/a-stirring-in-the-bones/
-koboLink: 
 kindleLink: http://www.amazon.com/A-Stirring-Bones-Jennifer-Parsons-ebook/dp/B00GM99UNG
 payhipLink: 
 itchLink: https://pixelpaperyarn.itch.io/a-stirring-in-the-bones
