@@ -42,5 +42,20 @@ const books = defineCollection({
 	}),
 });
 
+const zines = defineCollection({
+	type: 'content',
+	// Type-check frontmatter using a schema
+	schema: z.object({
+		title: z.string(),
+		// Transform string to Date object
+		pubDate: z.coerce.date(),
+		coverImage: z.string().optional(),
+		payhipLink: z.string().optional().nullable(),
+		itchLink: z.string().optional().nullable(),
+		genre: z.string().optional().nullable(),
+		category: z.string().optional().nullable(),
+		tag: z.string().optional().nullable(),
+	}),
+});
 
-export const collections = { blog, books };
+export const collections = { blog, books, zines };
