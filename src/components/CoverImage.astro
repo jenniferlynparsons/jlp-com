@@ -5,14 +5,15 @@ import { Image } from "astro:assets";
 interface Props {
   imagePath: string;
   altText: string;
+  imageDirectory?: string;
 }
 
-const { imagePath, altText } = Astro.props;
+const { imagePath, altText, imageDirectory = "cover-images" } = Astro.props;
 
-const fullImagePath = `/src/assets/cover-images/${imagePath}`;
-const images = import.meta.glob<{ default: ImageMetadata }>("/src/assets/cover-images/*.{jpeg,jpg,png,gif}");
+const fullImagePath = `/src/assets/${imageDirectory}/${imagePath}`;
+const images = import.meta.glob<{ default: ImageMetadata }>("/src/assets/**/*.{jpeg,jpg,png,gif}");
 console.log(images);
-if (!images[fullImagePath]) throw new Error(`"${fullImagePath}" does not exist in glob: "/src/assets/cover-images/*.{jpeg,jpg,png,gif}"`);
+if (!images[fullImagePath]) throw new Error(`"${fullImagePath}" does not exist in glob: "/src/assets/**/*.{jpeg,jpg,png,gif}"`);
 ---
 
 <Image src={images[fullImagePath]()} alt={altText} class="!m-0 w-full h-auto max-w-full" />

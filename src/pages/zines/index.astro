@@ -1,0 +1,35 @@
+---
+import Page from "../../layouts/Page.astro";
+import { SITE_DESCRIPTION } from "../../consts";
+import { getCollection } from "astro:content";
+import CoverImage from "../../components/CoverImage.astro";
+
+const zines = (await getCollection("zines")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<Page title="zines" description={SITE_DESCRIPTION}>
+  <div class="container mb-20 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-6xl">
+    {
+      zines.map((zine) => (
+        <div class="flex flex-col sm:flex-row sm:items-start lg:items-start">
+          <div class="w-full sm:w-1/2 mb-4 sm:mb-0 flex justify-center sm:justify-start">
+            <div class="max-w-48 sm:max-w-none">
+              <a href={`/zines/${zine.slug}/`}>
+                <CoverImage imagePath={zine.data.coverImage ?? ""} altText={`Cover of ${zine.data.title}`} imageDirectory="zine-images" />
+              </a>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2 book-info sm:ml-6 lg:ml-8 text-center sm:text-left">
+            <h3 class="!mt-0 mb-2 not-prose font-bold text-xl sm:text-2xl text-jlp-burnt">
+              <a href={`/zines/${zine.slug}/`}>{zine.data.title}</a>
+            </h3>
+            <p class="text-sm sm:text-base">{zine.data.tag}</p>
+            <a class="read-more text-sm sm:text-base" href={`/zines/${zine.slug}/`}>
+              Learn more →
+            </a>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</Page>
