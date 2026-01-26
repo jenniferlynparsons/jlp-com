@@ -24,6 +24,9 @@ kindleLink: https://www.amazon.com/dp/B0G6XBJ8BP
 payhipLink: https://payhip.com/b/TOb3m
 itchLink: https://pixelpaperyarn.itch.io/all-is-hell-bent
 
+# Preview
+previewLink: https://dub.sh/aihb-sample
+
 
 ---
 This collection of stories and poems features the tragic tale of Loki and his wife Sigyn, brought to life in this exploration of love, trust, and devotion. 
