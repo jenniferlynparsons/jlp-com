@@ -35,6 +35,7 @@ const books = defineCollection({
 		isbn13: z.string().optional().nullable(),
 		payhipLink: z.string().optional().nullable(),
 		itchLink: z.string().optional().nullable(),
+		previewLink: z.string().optional().nullable(),
 		pageCount: z.number().optional().nullable(),
 		genre: z.string().optional().nullable(),
 		category: z.string().optional().nullable(),
